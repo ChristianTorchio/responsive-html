@@ -12,28 +12,25 @@
     <div id="out2"></div>
 
     <script>
-        let Array0=[],Array1=[];
+        let array =[[],[],[]];
         
-        Array2=[];
+        
         for(let i=0;i<10;i++){
-            Array2.push(parseInt(Math.random()*10))
-            Array0.push(Array2)
+           array[0].push(parseInt(Math.random()*10));
         }
-        document.getElementById("out0").innerHTML=Array2[2];
+        document.getElementById("out0").innerHTML=array[0][2]
 
-        Array3=[];
+        
         for(let i=0;i<10;i++){
-            Array3.push(parseInt(Math.random()*10))
-            Array0.push(Array3)
+          array[1].push(parseInt(Math.random()*10))  
         }
-        document.getElementById("out1").innerHTML=Array3[2]
+        document.getElementById("out1").innerHTML=array[1][2]
 
-        Array4=[];
+        
         for(let i=0;i<10;i++){
-            Array4.push(parseInt(Math.random()*10))
-            Array0.push(Array4)
+          array[2].push(parseInt(Math.random()*10))
         }
-        document.getElementById("out0").innerHTML=Array4[2]
+        document.getElementById("out2").innerHTML=array[2][2]
     </script>
 
 </body>
