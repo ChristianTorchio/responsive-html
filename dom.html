@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="lista1">
+
+        <li>Torta</li>
+        <li>Muffin</li>
+        <li>Cornetto</li>
+
+    </ul>
+
+     <button onclick="aggiungiElem()">Aggiungi </button>
+
+     <script>
+    function aggiungiElem() {
+
+        const node = document.createElement("li");
+        const node0 = document.createElement("li");
+
+        const textnode = document.createTextNode("Ciambella");
+        const text = document.createTextNode("Pancake");
+
+        node.appendChild(textnode);
+        node0.appendChild(text);
+
+        document.getElementById("lista1").appendChild(node);
+        document.getElementById("lista1").appendChild(node0);
+    }
+
+
+     </script>
+    
+
+
+</body>
+</html>
