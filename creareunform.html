@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FORM HTML</title>
+  </head>
+<body>
+
+    <div class="container-fluid"><h1>FORM HTML</h1></div>
+
+<form action="" name="FormPost" onSubmit="return validaForm();">
+  <label for="titolo">Titolo del Form</label>
+  <input type="text" id="titolo" name="titolo" ><br>
+  <label for="autore">Autore del Form</label>
+  <input type="text" id="autore" name="autore" ><br>
+  <label for="category">Mettere una categoria</label>
+  <select id="category" name="category">
+      <option></option>
+      <option value="html">html</option>
+      <option value="css">css</option>
+      <option value="javascript">javascript</option>
+      <option value="bootstrap">bootstrap</option>
+      <option value="phyton">phyton</option>
+  </select>
+  
+  <br>
+
+  <label for="autore">Post</label><br>
+  <textarea type="test" id="post" name="post" rows="10" cols="40">Inserisci il testo</textarea><br>
+  <label for="autore">Link</label><br>
+  <textarea type="test" id="link" name="link" rows="1" cols="50">Inserisci il link</textarea><br>
+  <input type="submit"><input type="reset">
+</form>
+
+<script>
+  function validaForm()
+  {if (document.FormPost.titolo.value=="") {
+    alert("Inserire il titolo");
+    return false;
+  }
+  if(document.FormPost.autore.value=="") {
+    alert("Inserire l'autore");
+    return false;
+  }
+  if(document.FormPost.category.value=="") {
+    alert("Inserisci la categoria");
+    return false;
+  }
+  alert("Dati inseriti correttamente");
+  return false;
+  }
+  </script>
+
+</body>
+</html>
